@@ -13,10 +13,81 @@ main {
 header {
     display: flex;
     justify-content: space-between;
+    background-color: blueviolet;
+    height: 2em;
+    padding: 10px;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 section {
     min-height: 100vh;
     display: flex;
     justify-content: center;
+    padding-top: 70px;
+}
+
+nav {
+    margin-right: 40px;
+}
+
+nav > a {
+    text-decoration: none;
+    color: black;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+
+nav > a:hover {
+    background-color: white;
+    color: blueviolet;
+}
+ 
+nav > a:active {
+    background-color: white;
+    color: blueviolet
+  }
+
+header > span {
+    padding: 20px;
+}
+
+.icon {
+    color: black;
+}
+
+#Home {
+    background-image: url("phyllis-kosminsky-2M43Age2FLw-unsplash.jpg");
+    background-size: cover;
+}
+
+.Welcome {
+    color: white;
+    font-size: 120px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 170px;
+    text-shadow: 5px 5px gray;
+}
+
+.photo-credit {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 40px;
+    font-size: 12px;
+    color: black;
+}
+
+.photo-credit > a {
+    text-decoration: none;
+    color: black;
+}
+
+.Sayhi {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
 }
