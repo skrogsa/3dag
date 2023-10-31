@@ -1,0 +1,22 @@
+body {
+    min-height: 100vh;
+    background-color:aqua;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
