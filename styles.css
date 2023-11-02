@@ -1,9 +1,13 @@
 body {
     min-height: 100vh;
-    background-color:aqua;
+    background-color:#909ba0;
     margin: 0px;
     display: flex;
     flex-direction: column;
+}
+
+h2, p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 main {
@@ -56,10 +60,6 @@ header > span {
     padding: 20px;
 }
 
-.icon {
-    color: black;
-}
-
 #Home {
     background-image: url("phyllis-kosminsky-2M43Age2FLw-unsplash.jpg");
     background-size: cover;
@@ -87,7 +87,87 @@ header > span {
     color: black;
 }
 
+#About {
+    background-color: #909ba0;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 35px;
+    display: grid;
+    align-items: baseline;
+    justify-items: center;
+}
+
+.image > img {
+    width: 35%;
+    height: 35%;
+}
+
+.image > p {
+    font-size: 12px;
+}
+
+.image > p > a {
+    text-decoration: none;
+    color: black;
+}
+
+.text > p {
+    font-size: 12px;
+}
+
+#Contact {
+    background: linear-gradient(#909ba0, blueviolet);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+li {
+    padding: 20px;
+}
+
 .Sayhi {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 50px;
 }
+
+footer {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 40px;
+}
+  
+footer > a {
+        position: relative;
+        text-decoration: none;
+        color: black;
+      }
+      
+footer > a::before {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 4px;
+          border-radius: 4px;
+          background-color: #18272F;
+          bottom: 0;
+          left: 0;
+          transform-origin: right;
+          transform: scaleX(0);
+          transition: transform .3s ease-in-out;
+        }
+      
+footer > a:hover::before {
+        transform-origin: left;
+        transform: scaleX(1);
+      }
