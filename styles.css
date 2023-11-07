@@ -112,6 +112,11 @@ header > span {
 
 .text > p {
     font-size: 12px;
+    inline-size: 300px;
+}
+
+.container {
+    display: grid;
 }
 
 #Contact {
